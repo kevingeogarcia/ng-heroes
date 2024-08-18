@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { delay, switchMap } from 'rxjs';
 import { Hero } from '../../interfaces/hero.interface';
 import { HeroesService } from '../../services/herores.service';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-hero-page',
@@ -12,12 +13,13 @@ import { HeroesService } from '../../services/herores.service';
 export class HeroPageComponent implements OnInit {
 
 
-  color:string = "lightpink";
+  color: string = "lightpink";
   hero?: Hero;
   constructor(
     private heroService: HeroesService,
     private activatedRoute: ActivatedRoute,
     private router: Router,
+    private location: Location,
   ) { }
 
 
@@ -33,8 +35,8 @@ export class HeroPageComponent implements OnInit {
     });
   }
 
-  goBack():void{
-    this.router.navigateByUrl('/heroes/list');
+  goBack(): void {
+    this.location.back();
   }
 
 }

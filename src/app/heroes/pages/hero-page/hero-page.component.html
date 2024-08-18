@@ -26,46 +26,46 @@
     </mat-card>
   </div>
 
-  <div class="col-12 flex justify-content-center fadein animation-duration-1000 ">
-    <div class="flex justify-content-center">
+  <div class="col-12 flex flex-wrap justify-content-center fadein animation-duration-1000 ">
+    <div class="">
       <img [src]="hero | heroImage" class="shadow-8 w-24rem " [alt]="hero.superhero" mat-card-image>
     </div>
-    <mat-card appearance="outlined"
-      class="shadow-8 w-16rem flex justify-content-center align-items-center">
-      <mat-card-content>
-        <mat-card-title>Information</mat-card-title>
-        <mat-list>
-          <mat-list-item>
-            <span matListItemTitle>Name </span>
-            <span matListItemLine>{{hero.superhero}}</span>
-          </mat-list-item>
-          <mat-list-item>
-            <span matListItemTitle>First appearance </span>
-            <span matListItemLine>{{hero.first_appearance}}</span>
-          </mat-list-item>
+      <mat-card appearance="outlined" class="shadow-8 w-16rem flex justify-content-center align-items-center">
+        <mat-card-content>
+          <mat-card-title>Information</mat-card-title>
+          <mat-list>
+            <mat-list-item>
+              <span matListItemTitle>Name </span>
+              <span matListItemLine>{{hero.superhero}}</span>
+            </mat-list-item>
+            <mat-list-item>
+              <span matListItemTitle>First appearance </span>
+              <span matListItemLine>{{hero.first_appearance}}</span>
+            </mat-list-item>
 
-          <mat-list-item>
-            <span matListItemTitle>Publisher</span>
-            <span matListItemLine>{{hero.publisher}}</span>
-          </mat-list-item>
-          <mat-list-item>
-            <span matListItemTitle>Alter ego</span>
-            <span matListItemLine>{{hero.alter_ego}}</span>
-          </mat-list-item>
-        </mat-list>
-        <div class="col flex justify-content-center align-items-center">
-          <mat-chip-listbox>
-            <mat-chip *ngFor="let name of hero.characters.split(',')">
-              {{name}}
-            </mat-chip>
-          </mat-chip-listbox>
-        </div>
-      </mat-card-content>
+            <mat-list-item>
+              <span matListItemTitle>Publisher</span>
+              <span matListItemLine>{{hero.publisher}}</span>
+            </mat-list-item>
+            <mat-list-item>
+              <span matListItemTitle>Alter ego</span>
+              <span matListItemLine>{{hero.alter_ego}}</span>
+            </mat-list-item>
+          </mat-list>
+          <div class="col flex justify-content-center align-items-center">
+            <mat-chip-listbox>
+              <mat-chip *ngFor="let name of hero.characters.split(',')">
+                {{name}}
+              </mat-chip>
+            </mat-chip-listbox>
+          </div>
+        </mat-card-content>
 
-      <button mat-button mat-raised color="primary" (click)="goBack()" [routerLink]="['/heroes', hero.id]">
-        <mat-icon>arrow_back_ios</mat-icon>
-        Regresar
-      </button>
-    </mat-card>
+        <button mat-button mat-raised color="primary" (click)="goBack()" [routerLink]="['/heroes']">
+          <mat-icon>arrow_back_ios</mat-icon>
+          Regresar
+        </button>
+      </mat-card>
+
   </div>
 </div>
