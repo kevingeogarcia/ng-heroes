@@ -2,7 +2,7 @@
   "users": [
     {
       "id": 1,
-      "usuario": "John Doe",
+      "user": "John Doe",
       "email": "john.due@gmail.com"
     }
   ],
@@ -168,13 +168,40 @@
       "characters": "Norrin Radd"
     },
     {
-      "id": "Ls4S7-R",
-      "superhero": "kevin ",
+      "id": "jsh1sru",
+      "superhero": "Kevin ",
       "publisher": "Marvel Comics",
-      "alter_ego": "kevingeogarcia",
-      "first_appearance": "commic com san diego",
-      "characters": "kevio, geo, kevingeo, garcia, kevingeogarcia",
-      "alt_img": "https://wallpapers.com/images/hd/goku-super-saiyan-4-cqsgrngmu9rb90rd.jpg"
+      "alter_ego": "Geovani ",
+      "first_appearance": "Hernandez Garcia",
+      "characters": "kevigeo, kevingeogarcia, kevdevelopment",
+      "alt_img": "https://wallpapers.com/images/high/dragon-ball-z-phone-28rrc1l3bd1czzav.webp"
+    },
+    {
+      "id": "iEaOyQ7",
+      "superhero": "Goku",
+      "publisher": "Marvel Comics",
+      "alter_ego": "kakaroto",
+      "first_appearance": "dragon ball ",
+      "characters": "goku, kakaroto, sayain, super sayain",
+      "alt_img": "https://wallpapers.com/images/high/super-saiyan-4-kamehameha-20ci0n6jhkxvcdvy.webp"
+    },
+    {
+      "id": "DHyjmMe",
+      "superhero": "Vegueta",
+      "publisher": "ToeiAnimation",
+      "alter_ego": "Príncipe Sayán",
+      "first_appearance": "Dragon ball Z",
+      "characters": "Sayán, Príncipe Sayán, super Sayán",
+      "alt_img": "https://wallpapers.com/images/high/majin-vegeta-smile-ym9pt8scnnnzmxof.webp"
+    },
+    {
+      "id": "g327Dwy",
+      "superhero": "Vegito",
+      "publisher": "ToeiAnimation",
+      "alter_ego": "Fusión Goku y Vegeta",
+      "first_appearance": "Dragon ball Z",
+      "characters": "goku, vegeta, vegito, fusión, super sayan",
+      "alt_img": "https://wallpapers.com/images/high/vegeta-black-and-white-2048-x-2048-8cmd6pcb9wn1k3yr.webp"
     }
   ]
 }

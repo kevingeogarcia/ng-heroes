@@ -11,4 +11,6 @@ export interface Hero {
 export enum Publisher {
   DCComics = "DC Comics",
   MarvelComics = "Marvel Comics",
+  ToeiAnimation = "toei Animation",
 }
+

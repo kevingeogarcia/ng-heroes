@@ -41,8 +41,8 @@ export class HeroesService {
   deleteByIdHero(hero: Hero): Observable<boolean> {
     if (!hero.id) throw Error(`Hero id is required`);
     return this.http.delete<Hero>(`${this.baseUrl}/heroes/${hero.id}`).pipe(
+      map(resp => true),
       catchError(err => of(false)),
-      map(resp => true)
     );
   }
 
