@@ -1,11 +1,11 @@
-<mat-card style="height:670px;">
+<mat-card>
   <mat-card-header>
     <mat-card-title>{{ hero.superhero }}</mat-card-title>
     <mat-card-subtitle>{{hero.alter_ego}}</mat-card-subtitle>
   </mat-card-header>
-  <img mat-card-image [src]="hero | heroImage" alt="" class="h-25rem w-full">
   <mat-card-content>
     <div class="flex flex-column align-items-center">
+      <img mat-card-image [src]="hero | heroImage" alt="" class="h-25rem w-full">
       <h4>{{hero.publisher}}</h4>
       <div>
         <p>Primera Aparición:</p>
